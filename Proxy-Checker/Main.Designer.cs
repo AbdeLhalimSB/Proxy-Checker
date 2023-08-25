@@ -73,6 +73,7 @@ namespace Proxy_Checker
             this.btn_browse.TabIndex = 2;
             this.btn_browse.Text = "Browse";
             this.btn_browse.UseVisualStyleBackColor = true;
+            this.btn_browse.Click += new System.EventHandler(this.btn_browse_Click);
             // 
             // groupBox1
             // 
@@ -124,6 +125,7 @@ namespace Proxy_Checker
             // radio_http
             // 
             this.radio_http.AutoSize = true;
+            this.radio_http.Checked = true;
             this.radio_http.Location = new System.Drawing.Point(138, 19);
             this.radio_http.Name = "radio_http";
             this.radio_http.Size = new System.Drawing.Size(54, 17);
@@ -205,11 +207,12 @@ namespace Proxy_Checker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(551, 243);
+            this.ClientSize = new System.Drawing.Size(551, 248);
             this.Controls.Add(this.btn_start);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Main";
             this.Text = "Proxy Checker";
