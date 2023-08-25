@@ -1,0 +1,10 @@
+C:\Users\PC\Desktop\Wroking_on_it\slm\Proxy-Checker\Proxy-Checker\bin\Debug\Proxy-Checker.exe.config
+C:\Users\PC\Desktop\Wroking_on_it\slm\Proxy-Checker\Proxy-Checker\bin\Debug\Proxy-Checker.exe
+C:\Users\PC\Desktop\Wroking_on_it\slm\Proxy-Checker\Proxy-Checker\bin\Debug\Proxy-Checker.pdb
+C:\Users\PC\Desktop\Wroking_on_it\slm\Proxy-Checker\Proxy-Checker\obj\Debug\Proxy-Checker.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\Wroking_on_it\slm\Proxy-Checker\Proxy-Checker\obj\Debug\Proxy_Checker.Main.resources
+C:\Users\PC\Desktop\Wroking_on_it\slm\Proxy-Checker\Proxy-Checker\obj\Debug\Proxy_Checker.Properties.Resources.resources
+C:\Users\PC\Desktop\Wroking_on_it\slm\Proxy-Checker\Proxy-Checker\obj\Debug\Proxy-Checker.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\Wroking_on_it\slm\Proxy-Checker\Proxy-Checker\obj\Debug\Proxy-Checker.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Wroking_on_it\slm\Proxy-Checker\Proxy-Checker\obj\Debug\Proxy-Checker.exe
+C:\Users\PC\Desktop\Wroking_on_it\slm\Proxy-Checker\Proxy-Checker\obj\Debug\Proxy-Checker.pdb
