@@ -29,20 +29,21 @@ namespace Proxy_Checker
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.label1 = new System.Windows.Forms.Label();
             this.file_path_tx = new System.Windows.Forms.TextBox();
             this.btn_browse = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.radio_http = new System.Windows.Forms.RadioButton();
-            this.radio_socks4 = new System.Windows.Forms.RadioButton();
             this.radio_socks5 = new System.Windows.Forms.RadioButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.good = new System.Windows.Forms.Label();
+            this.radio_socks4 = new System.Windows.Forms.RadioButton();
+            this.radio_http = new System.Windows.Forms.RadioButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.bad = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.good = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.btn_start = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -100,27 +101,27 @@ namespace Proxy_Checker
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Settings";
             // 
-            // groupBox3
+            // radio_socks5
             // 
-            this.groupBox3.Controls.Add(this.bad);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.good);
-            this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Location = new System.Drawing.Point(283, 103);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(256, 100);
-            this.groupBox3.TabIndex = 5;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Results";
+            this.radio_socks5.AutoSize = true;
+            this.radio_socks5.Location = new System.Drawing.Point(138, 63);
+            this.radio_socks5.Name = "radio_socks5";
+            this.radio_socks5.Size = new System.Drawing.Size(61, 17);
+            this.radio_socks5.TabIndex = 6;
+            this.radio_socks5.TabStop = true;
+            this.radio_socks5.Text = "Socks5";
+            this.radio_socks5.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // radio_socks4
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Proxy Type :";
+            this.radio_socks4.AutoSize = true;
+            this.radio_socks4.Location = new System.Drawing.Point(138, 40);
+            this.radio_socks4.Name = "radio_socks4";
+            this.radio_socks4.Size = new System.Drawing.Size(61, 17);
+            this.radio_socks4.TabIndex = 5;
+            this.radio_socks4.TabStop = true;
+            this.radio_socks4.Text = "Socks4";
+            this.radio_socks4.UseVisualStyleBackColor = true;
             // 
             // radio_http
             // 
@@ -134,46 +135,27 @@ namespace Proxy_Checker
             this.radio_http.Text = "HTTP";
             this.radio_http.UseVisualStyleBackColor = true;
             // 
-            // radio_socks4
+            // label2
             // 
-            this.radio_socks4.AutoSize = true;
-            this.radio_socks4.Location = new System.Drawing.Point(138, 40);
-            this.radio_socks4.Name = "radio_socks4";
-            this.radio_socks4.Size = new System.Drawing.Size(61, 17);
-            this.radio_socks4.TabIndex = 5;
-            this.radio_socks4.TabStop = true;
-            this.radio_socks4.Text = "Socks4";
-            this.radio_socks4.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(20, 42);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(66, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Proxy Type :";
             // 
-            // radio_socks5
+            // groupBox3
             // 
-            this.radio_socks5.AutoSize = true;
-            this.radio_socks5.Location = new System.Drawing.Point(138, 63);
-            this.radio_socks5.Name = "radio_socks5";
-            this.radio_socks5.Size = new System.Drawing.Size(61, 17);
-            this.radio_socks5.TabIndex = 6;
-            this.radio_socks5.TabStop = true;
-            this.radio_socks5.Text = "Socks5";
-            this.radio_socks5.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(42, 33);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Good :";
-            // 
-            // good
-            // 
-            this.good.AutoSize = true;
-            this.good.ForeColor = System.Drawing.Color.LimeGreen;
-            this.good.Location = new System.Drawing.Point(108, 33);
-            this.good.Name = "good";
-            this.good.Size = new System.Drawing.Size(13, 13);
-            this.good.TabIndex = 8;
-            this.good.Text = "0";
+            this.groupBox3.Controls.Add(this.bad);
+            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Controls.Add(this.good);
+            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Location = new System.Drawing.Point(283, 103);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(256, 100);
+            this.groupBox3.TabIndex = 5;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Results";
             // 
             // bad
             // 
@@ -194,6 +176,25 @@ namespace Proxy_Checker
             this.label6.TabIndex = 9;
             this.label6.Text = "Bad :";
             // 
+            // good
+            // 
+            this.good.AutoSize = true;
+            this.good.ForeColor = System.Drawing.Color.LimeGreen;
+            this.good.Location = new System.Drawing.Point(108, 33);
+            this.good.Name = "good";
+            this.good.Size = new System.Drawing.Size(13, 13);
+            this.good.TabIndex = 8;
+            this.good.Text = "0";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(42, 33);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(39, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Good :";
+            // 
             // btn_start
             // 
             this.btn_start.Location = new System.Drawing.Point(12, 209);
@@ -202,6 +203,7 @@ namespace Proxy_Checker
             this.btn_start.TabIndex = 3;
             this.btn_start.Text = "Start";
             this.btn_start.UseVisualStyleBackColor = true;
+            this.btn_start.Click += new System.EventHandler(this.btn_start_Click);
             // 
             // Main
             // 
@@ -213,9 +215,11 @@ namespace Proxy_Checker
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Main";
             this.Text = "Proxy Checker";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
